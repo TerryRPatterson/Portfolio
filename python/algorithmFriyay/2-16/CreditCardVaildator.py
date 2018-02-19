@@ -12,6 +12,10 @@ def isValidNumber(number):
         return "Discover"
     if str(number)[0] == "4":
         return "Visa"
+    if "50" <= stringedNumber[0:2] <= "55":
+        return "Master"
+    else:
+        return "Card number not valid"
 
 assert isValidNumber(6011000000000000) == "Discover", "The test failed excpeted output was Discover recived %d" %isValidNumber(6011000000000000)
 assert isValidNumber(3781908473920192) == "Card number not vaild", "The test failed 2"
