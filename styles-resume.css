@@ -1,0 +1,27 @@
+body {
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body > *{
+  display: inline-block;
+}
+h1{
+  align-self: center;
+}
+hr{
+  width:100%
+}
+header{
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+}
+address{
+  margin: 10px;
+}
