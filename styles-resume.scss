@@ -9,31 +9,33 @@
             display: inline-block;
             width: 80%;
         }
+        address {
+            text-align: center;
+        }
     }
-    h1{
-        align-self: center;
+
+    h2{
+        margin: 10px;
     }
     hr{
         width:100%
     }
-    .header{
+    header{
         align-items: center;
         display: inline-flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
         width: 100%;
         header{
+            font-size: 12px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             width: 100%;
-            address{
-                align-self: flex-start;
-            }
         }
-    }
-    address{
-      margin: 10px;
+        h1{
+            align-self: center;
+        }
     }
     .screen{
         display: none;
