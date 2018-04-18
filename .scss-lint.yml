@@ -209,3 +209,5 @@ linters:
         - zoom
     ColorVariable:
       enabled: false
+    StringQuotes:
+      style: double_quotes
