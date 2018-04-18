@@ -1,27 +1,28 @@
 body {
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
-body > *{
-  display: inline-block;
-}
-h1{
-  align-self: center;
-}
-hr{
-  width:100%
-}
-header{
+  align-items: center; }
+
+body > * {
+  display: inline-block; }
+
+h1 {
+  align-self: center; }
+
+hr {
+  width: 100%; }
+
+header {
   display: inline-flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  text-align: center;
-}
-address{
-  margin: 10px;
-}
+  text-align: center; }
+
+address {
+  margin: 10px; }
+
+/*# sourceMappingURL=styles.css.map */
