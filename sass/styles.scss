@@ -1,10 +1,10 @@
-// Will move tehm later
+
 // scss-lint:disable ColorVariable
 
-@mixin z-depth-1{
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
-              0 3px 1px -2px rgba(0,0,0,0.12),
-              0 1px 5px 0 rgba(0,0,0,0.2);
+@mixin z-depth-1 {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+              0 3px 1px -2px rgba(0, 0, 0, .12),
+              0 1px 5px 0 rgba(0, 0, 0, .2);
 }
 
 @mixin z-depth-1-half {
@@ -13,80 +13,88 @@
             0 3px 1px -1px rgba(0, 0, 0, .2);
 }
 
-/* 6dp elevation modified*/
-@mixin z-depth-2{
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),
-              0 1px 10px 0 rgba(0,0,0,0.12),
-              0 2px 4px -1px rgba(0,0,0,0.3);
+// 6dp elevation modified
+@mixin z-depth-2 {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14),
+              0 1px 10px 0 rgba(0, 0, 0, .12),
+              0 2px 4px -1px rgba(0, 0, 0, .3);
 }
 
-/* 12dp elevation modified*/
-@mixin z-depth-3{
-  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),
-              0 3px 14px 2px rgba(0,0,0,0.12),
-              0 5px 5px -3px rgba(0, 0, 0, 0.2);
+// 12dp elevation modified
+@mixin z-depth-3 {
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, .14),
+              0 3px 14px 2px rgba(0, 0, 0, .12),
+              0 5px 5px -3px rgba(0, 0, 0, .2);
 }
 
-/* 16dp elevation */
-@mixin z-depth-4{
-  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),
-              0 6px 30px 5px rgba(0,0,0,0.12),
-              0 8px 10px -7px rgba(0,0,0,0.2);
+// 16dp elevation
+@mixin z-depth-4 {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14),
+              0 6px 30px 5px rgba(0, 0, 0, .12),
+              0 8px 10px -7px rgba(0, 0, 0, .2);
 }
 
 // 24dp elevation
 @mixin z-depth-5 {
-  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14),
-              0 9px 46px 8px rgba(0,0,0,0.12),
-              0 11px 15px -7px rgba(0,0,0,0.2);
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, .14),
+              0 9px 46px 8px rgba(0, 0, 0, .12),
+              0 11px 15px -7px rgba(0, 0, 0, .2);
 }
 
 html {
     width: 100vw;
 }
+
 body {
-    overflow-y: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    justify-content: flex-start;
+    margin: 0;
     overflow-x: hidden;
+
     @font-face{
         font-family: "Roboto";
-        url: "https://fonts.googleapis.com/css?family=Roboto"
+        src : url("https://fonts.googleapis.com/css?family=Roboto");
     }
-    font-family: "Roboto", sans-serif;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    > *{
+
+
+    > * {
         display: inline-block;
     }
-    margin: 0;
-    margin-right: 8px;
+
+
+    // padding: 8px;
 }
 
-.column-flex{
+.column-flex {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    flex-grow: 1;
-    justify-content: flex-start;
 }
 
-hr{
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+    text-align: center;
     width: 100%;
 }
-a {
-    color: #0000ff;
-    text-decoration: none;
-    cursor: pointer;
+
+hr {
+    width: 100%;
 }
+
+a {
+    color: #00f;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -96,23 +104,28 @@ a:visited {
 }
 
 
-.nav_container{
-    .hamburger_menu{
+.nav_container {
+    height: 100%;
+    width: fit-content;
+
+    .hamburger_menu {
         display: block;
-        img{
+
+        img {
             height: 100%;
         }
     }
-    a{
-        :visited{
-            text-decoration: none;
-            color: black;
-        }
+
+    a {
+        color: #000;
         text-decoration: none;
-        color: black;
+
+        :visited {
+            color: #000;
+            text-decoration: none;
+        }
     }
-    height: 100%;
-    width: fit-content;
+
     .nav_options.pinned {
         display: block;
     }
@@ -130,71 +143,81 @@ a:visited {
         padding: 0;
         position: fixed;
         text-align: center;
-        top: 7%;
+        top: 10%;
         width: 25%;
+
         ul {
-            text-align: center;
             padding: 0;
+            text-align: center;
         }
     }
+
     .nav_menu.active,
     .nav_menu.pinned {
-            display: flex;
+        display: flex;
     }
 }
 
 .header {
     background-color: #1b5e20;
-    color: white;
+    color: #fff;
     margin-top: 0;
     width: 120vw;
 }
 
 .top_bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     @include z-depth-1;
+    align-items: center;
+    display: flex;
     height: 7%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
     width: 100%;
-    img{
+
+    img {
         height: 100%;
     }
-    h1{
+
+    h1 {
         margin-right: 15px;
         text-align: center;
     }
 }
 
 .portrait {
-    max-height: 20vh;
+    border-color: darkBlue;
     border-radius: 50%;
+    border-style: groove;
+    border-width: medium;
+    max-height: 20vh;
 }
 
 .main_picture {
-    color: white;
-    // background-color: rgba(50%, 50%, 50%, 0.5);
+    align-items: center;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Datove_centrum_TCP.jpg/1280px-Datove_centrum_TCP.jpg");
     background-size: contain;
+    color: #fff;
     display: flex;
     flex-direction: column;
+    height: fit-content;
     justify-content: space-between;
-    align-items: center;
-    a{
-        width: fit-content;
+    width: 100%;
+
+    a {
         margin: 10px;
         text-align: center;
+        width: fit-content;
     }
-    width: 100%;
-    height: fit-content;
+
 }
 
-.intro{
+.intro {
     max-width: 75%;
     text-align: center;
 }
 
-.projects{
+.projects {
     width: 100%;
 }
 
@@ -210,11 +233,12 @@ a:visited {
     display: none;
     overflow: hidden;
 
-}
 
-.demo.active {
+}.active {
     display: inline;
 }
+
+// .demo
 
 .demo-toggle {
     border: 0;
@@ -234,7 +258,7 @@ a:visited {
 
 .modal {
     background-color: #000;
-    color: red;
+    color: #f00;
     margin: auto;
     position: absolute;
     right: 50%;
@@ -242,5 +266,5 @@ a:visited {
 }
 
 input.modal-closing-trick:checked ~ div {
-    display: none !important;
+    display: none;
 }
