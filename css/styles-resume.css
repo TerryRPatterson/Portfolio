@@ -1,47 +1,37 @@
-@media print {
-  main {
-    align-items: center;
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center; }
+  main > * {
+    display: inline-block;
+    width: 80%; }
+  main address {
+    text-align: center; }
+
+h2 {
+  margin: 10px; }
+
+hr {
+  width: 100%; }
+
+header {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%; }
+  header header {
+    font-size: 12px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center; }
-    main > * {
-      display: inline-block;
-      width: 80%; }
-    main address {
-      text-align: center; }
-
-  h2 {
-    margin: 10px; }
-
-  hr {
+    flex-direction: row;
     width: 100%; }
+  header h1 {
+    align-self: center; }
 
-  header {
-    align-items: center;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%; }
-    header header {
-      font-size: 12px;
-      display: flex;
-      flex-direction: row;
-      width: 100%; }
-    header h1 {
-      align-self: center; }
-
-  .screen {
-    display: none; } }
-@media screen {
-  .detail {
-    display: none; }
-
-  :hover > .detail {
-    display: inline-block; }
-
-  .print {
-    display: none; } }
+.screen {
+  display: none; }
 
 /*# sourceMappingURL=styles-resume.css.map */
