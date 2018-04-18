@@ -1,7 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles-resume.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+    crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/styles-resume.css">
   <title> Terry Patterson</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The Resume of Junior Software engineer Terry Patterson">
@@ -11,32 +15,42 @@
   <body>
      <section class="header print">
         <header>
-          <address>
-            Marietta, GA<br/>
-            (678)-383-7780<br/>
-            Terryp@wegrok.net<br/>
-            Terryp.org<br/>
-            github.com/terryRPatterson<br/>
-            www.linkedin.com/in/terry-patterson-375ba4148/<br/>
-            </address>
+
         <h1>
             Terry Patterson
         </h1>
-        <hr/>
+        <address>
+          Marietta, GA |
+          (678)-383-7780<br/>
+          Terryp@wegrok.net |
+          Terryp.org |
+          github.com/terryRPatterson |
+          www.linkedin.com/in/terry-patterson-375ba4148/<br/>
+          </address>
         </header>
+        <hr class="print"/>
     </section>
     <main>
-        <section id="about-me">
+        <!-- <section id="about-me">
             <h2 class="section-title">
                 About Me
             </h2>
             <hr class="print"/>
-            <!-- <section class="detail"> -->
+            <section class="detail">
+
+              </section>
+        </section> -->
+        <section id="projects">
+            <h2 class="section-title">
+                Projects
+            </h2>
+            <hr class="print"/>
         </section>
         <section id="skills">
           <h2 class="section-title">
             Development Skills
           </h2>
+          <hr class="print"/>
             <section class="detail">
                 <summary class="print">Python 2 & 3, Javascript, NodeJS, jQuery,
                     CSS, SCSS, HTML, PostgreSQL, RedHat Linux, Bash, Git, Atom,
@@ -83,21 +97,23 @@
       </section >
       <section id="jobs">
           <h2 class="section-title">
-            Experince
+            Other Experince
           </h2>
           <hr class="print"/>
           <section id="wendys" class="detail">
               <h3>
-                Wendy's At Merchant's Walk, 1312 Johnson Ferry Rd, Marietta, GA 30068
+                Wendy's At Merchant's Walk, 1312 Johnson Ferry Rd, Marietta,
+                GA 30068
               </h3>
               <h4>
                 Crew Member
               </h4>
               <time>August 2017 - November 2017</time><br/>
-              <ul>
-                <li>Responsible for preparing  sandwhiches based on customer requests</li>
-                <li>Trained new sandwhich makers</li>
-                <li>Managed front of house during peak hours</li>
+                <ul class="detail screen">
+                    <li>Responsible for preparing  sandwhiches based on customer
+                        requests</li>
+                    <li>Trained new sandwhich makers</li>
+                    <li>Managed front of house during peak hours</li>
               </ul>
           </section>
       </section>
@@ -106,17 +122,6 @@
             Education
           </h2>
           <hr class="print">
-            <section id="HighSchool" class="detail">
-              <h3>
-                Pope High School, 3001 Hembree Rd NE, Marietta, GA 30062
-              </h3>
-              <h4>
-                High School Diploma
-              </h4>
-              <time>August 2013 - May 2017</time><br/>
-              Took intoduction to Digital Technology, Computer Science Principles,
-              and AP Computer Sciences
-            </section>
             <section id="DigitalCrafts" class="detail">
                 <h3>
                     Digital Crafts, 3423 Piedmont Rd NE, Atlanta, GA 30305
@@ -128,11 +133,20 @@
                 Learned Python, HTML, CSS, Javascript, and Node during the full
                 stack immersive course.
             </section>
+            <section id="HighSchool" class="detail">
+                <h3>
+                    Pope High School, 3001 Hembree Rd NE, Marietta, GA 30062
+                </h3>
+                <h4>
+                    High School Diploma
+                </h4>
+                <time>August 2013 - May 2017</time><br/>
+                <summary class="screen">
+                    Took intoduction to Digital Technology, Computer Science
+                    Principles, and AP Computer Sciences
+                </summary>
+            </section>
         </section>
     </main>
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-    integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
-    crossorigin="anonymous"/>
   </body>
 </html>

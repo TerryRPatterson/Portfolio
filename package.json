@@ -1,0 +1,20 @@
+{
+  "name": "terry-portfolio-site",
+  "version": "1.0.0",
+  "description": "The portfolio and resume site of Terry Patterson.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerryRPatterson/Portfolio.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/TerryRPatterson/Portfolio/issues"
+  },
+  "homepage": "https://github.com/TerryRPatterson/Portfolio#readme",
+  "dependencies": {}
+}
