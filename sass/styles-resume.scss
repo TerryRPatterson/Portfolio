@@ -40,3 +40,9 @@ header{
 .screen{
     display: none;
 }
+.subtle-link{
+    color: black;
+    :visited {
+        color: black;
+    }
+}
