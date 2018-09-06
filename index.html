@@ -8,6 +8,8 @@
     <link href="css/styles.css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+
+
     <noscript>
         <input type="checkbox" class="modal-close"
         id="modal-close">
@@ -24,10 +26,13 @@
         </label>
    </div>
     </noscript>
+
+
     <header class="header top_bar">
-        <nav class="nav_container">
+        <nav class="nav_container" id="nav">
             <a href="#" class="active">Home</a>
-            <a href="static/Terry-Patterson-Resume.pdf"  rel="noreferrer noopener">
+            <a href="static/Terry-Patterson-Resume.pdf"
+            rel="noreferrer noopener">
                 Resume</a>
         </nav>
     <h1>Terry Patterson</h1>
@@ -41,7 +46,7 @@
             <h1>Hello, I'm Terry Patterson</h1>
         </header>
 
-            <p class="intro">
+            <p class="text-paragraph">
                 I'm a Full Stack Developer from Atlanta, GA. I have always loved
                 to program, so after high school I
                 decided to pursue coding as a career. To that end I took
@@ -50,9 +55,14 @@
                     four month immersive bootcamp.</a><br/>
             </p>
         <section class="projects column-flex">
-            <h2>Featured Project</h2>
-            <div class="demo-box column-flex featured" id="showcase">
-                Project Description and links
+            <h2>Digi-Caching</h2>
+            <div class="demo-box column-flex active-demo" id="showcase">
+                <p>
+                Digi-Caching is a virtual
+                <a href="https://en.wikipedia.org/wiki/Geocaching">geocaching
+                </a>
+                app that lets users collect, combine, and cache digital
+                items to complete collections. </p>
                 <button class="demo-toggle" id="showcase-btn" type="submit">
                     Video Walkthrough</button> <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/PlbsAkes1VU"
@@ -64,48 +74,33 @@
                     class="demo live-demo active">
                 </iframe>
             </div>
+
+
                 <hr>
-                <h2>Other Project</h2>
-                <p> This section will include at least 4 projects covering
-                    static page creation front-end javascript, backend javascript
-                    , and python.</p>
+                <h2>Other Projects</h2>
                 <div class="other-projects">
+                    <div class="column-flex  demo-box">
+                        <h3>Authorized Fetch</h3>
+                        <p class="textParagraph">
+                        <a href="https://www.npmjs.com/package/authorizedfetch">
+                        Authorized Fetch</a> is a small wrapper
+                        around the base fetch call. Authorized fetch will
+                        automaticlly retrive the user token and send it with
+                        the fetch call, and respond to receiving a 401 status
+                        code.
+                        </div>
                     <div class="demo-box column-flex">
-                        Project Description and links
-                        <button class="demo-toggle" type="submit">
-                            Video Walkthrough</button> <iframe width="560" height="315"
-                            src="https://www.youtube-nocookie.com/embed/XQu8TTBmGhA?rel=0"
-                            allowfullscreen class="demo video-demo">
-                        </iframe>
-                        <iframe height="265" title="Placeholder"
-                            src="https://codepen.io/Terryp/embed/VXgdGd/?height=265&theme-id=0&default-tab=js,result&embed-version=2"
-                            allowfullscreen="true" width="100%"
-                            class="demo live-demo active">
-                            See the Pen <a href="https://codepen.io/Terryp/pen/VXgdGd/">
-                            Placeholder</a> by Terry Patterson (
-                            <a href="https://codepen.io/Terryp">@Terryp</a>)on
-                            <a href="https://codepen.io">CodePen</a>
-                        </iframe>
-                    </div>
-                    <div class="demo-box column-flex">
-                        Project Description and links
-                        <button class="demo-toggle" type="submit">
-                            Video Walkthrough</button> <iframe width="560" height="315"
-                            src="https://www.youtube-nocookie.com/embed/XQu8TTBmGhA?rel=0"
-                            allowfullscreen class="demo video-demo">
-                        </iframe>
-                        <iframe height="265" title="Placeholder"
-                            src="https://codepen.io/Terryp/embed/VXgdGd/?height=265&theme-id=0&default-tab=js,result&embed-version=2"
-                            allowfullscreen="true" width="100%"
-                            class="demo live-demo active">
-                            See the Pen <a href="https://codepen.io/Terryp/pen/VXgdGd/">
-                            Placeholder</a> by Terry Patterson (
-                            <a href="https://codepen.io/Terryp">@Terryp</a>)on
-                            <a href="https://codepen.io">CodePen</a>
-                        </iframe>
+                        <h3>Request Quest</h3>
+                        <p class="text-paragraph"
+                        <a href="https://github.com/TerryRPatterson/dc-rpg">
+                            Bibliotech</a> is a program allowing users to manage
+                            large collections of books.
+
                     </div>
                 </div>
         </section>
+
+        <!-- contacts section -->
         <div>
             <h2>Contact Information</h2>
             <hr>
@@ -154,10 +149,8 @@
             </address>
         </div>
     </main>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
     <script src="js/index.js"></script>
 
     </body>
