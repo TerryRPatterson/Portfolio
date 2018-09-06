@@ -16,5 +16,6 @@
     "url": "https://github.com/TerryRPatterson/Portfolio/issues"
   },
   "homepage": "https://github.com/TerryRPatterson/Portfolio#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {}
 }

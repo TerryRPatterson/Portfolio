@@ -34,4 +34,9 @@ header {
 .screen {
   display: none; }
 
+.subtle-link {
+  color: black; }
+  .subtle-link :visited {
+    color: black; }
+
 /*# sourceMappingURL=styles-resume.css.map */
