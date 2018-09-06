@@ -120,7 +120,8 @@ a:visited {
   max-width: 700px;
   min-width: 400px;
   overflow: hidden;
-  width: 47%; }
+  width: 47%;
+  margin-top: 10px; }
 
 .featured {
   width: 100%; }
